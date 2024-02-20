@@ -1,0 +1,777 @@
+.containerManagerRecruitment {
+    padding-top: 5rem;
+
+    .filterBar {
+        padding: 1.2rem;
+
+        .listFilter {
+            display: flex;
+            gap: 1.6rem;
+        }
+
+        .rightFnc {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .btnReload {
+
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        display: flex;
+        justify-content: space-between;
+
+        .itemFilter {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .dropdown {
+            padding: 0.2rem;
+            border-radius: 0.8rem;
+            background-color: var(--bg-btn-today);
+            cursor: pointer;
+        }
+
+        .labelField {
+            font-size: 1.2rem;
+
+            img {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        .fnc {
+            position: relative;
+            flex: 0.7;
+
+            .button {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 1.6rem;
+                position: absolute;
+                z-index: 1;
+                top: -4.8rem;
+            }
+        }
+    }
+
+    .tableView {
+        padding-bottom: 1.2rem;
+
+        tr {
+            .icon {
+                display: none;
+            }
+
+
+            &:hover {
+                .icon {
+                    display: block;
+                }
+            }
+
+            td {
+                p {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+
+        .subject {
+            padding: 0.8rem 1.6rem;
+            border-radius: 0.8rem;
+            color: var(--white);
+            min-width: 6.8rem;
+            width: fit-content;
+        }
+
+        .statusProcess,
+        .result {
+            color: var(--white);
+            text-align: center;
+            padding: 0.2rem;
+            border-radius: 0.8rem;
+        }
+
+        .viewDetail {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+        }
+    }
+
+}
+
+.contentPopup {
+    .form {
+        .mb_24 {
+            margin-bottom: 1.2rem;
+        }
+
+        .tabList {
+            width: 100%;
+
+            &>div {
+                &:first-child {
+                    div {
+                        padding-top: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        .infoResourse {
+            display: flex;
+            gap: 0.4rem;
+
+            .left,
+            .right {
+                flex: 1;
+            }
+        }
+
+    }
+}
+
+.processing {
+    display: flex;
+
+    .left,
+    .right {
+        flex: 1;
+    }
+
+    img {
+        width: 1rem;
+        height: 1rem;
+        margin-left: 1.2rem;
+    }
+}
+
+.skill {
+    display: flex;
+
+    .left,
+    .right {
+        flex: 1;
+
+        .courseRegister {
+            img {
+                width: 1rem;
+                height: 1rem;
+                margin-left: 1.2rem;
+            }
+
+        }
+
+        .selectExp {
+            width: 6rem;
+        }
+
+        .mrAuto {
+            float: right;
+        }
+    }
+
+    .levelTechnique {
+        img {
+            width: 1rem;
+            height: 1rem;
+            margin-left: 1.2rem;
+        }
+    }
+}
+
+.selectResourse {
+    img {
+        margin-left: 1.6rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.detailCandidate {
+    padding: 1rem 3.2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 3.2rem;
+
+    .baseInfo {
+        padding: 5rem;
+        flex: 0.25;
+        border: 1px solid var(--grey);
+        border-radius: 0.8rem;
+
+        .containerBaseInfo {
+            position: relative;
+
+            .loading {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        .candidate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .image {
+                img {
+                    width: 14rem;
+                    height: 14rem;
+                }
+            }
+        }
+
+        .info {
+            .item {
+                margin-bottom: 1.2rem;
+
+                &.flex {
+                    display: flex;
+                    gap: 0.8rem;
+                }
+
+                .label {
+                    font-weight: 600;
+                }
+
+                .contact {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                }
+
+                svg {
+                    cursor: pointer;
+
+                    &:hover {
+                        path {
+                            stroke: red;
+                        }
+                    }
+                }
+            }
+
+            .timeApplied {
+                font-weight: normal;
+            }
+        }
+    }
+
+    .progressInfo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        .iconSent {
+            width: 2.4rem;
+
+            path {
+                stroke: var(--deep-blue);
+            }
+        }
+
+        .btnSentMailCv {
+            margin-top: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .headerFunction {
+            display: flex;
+            justify-content: space-between;
+
+            .tab {
+                display: flex;
+                width: fit-content;
+                background-color: var(--cool-grey);
+                padding: 0.4rem;
+                border-top-left-radius: 0.8rem;
+                border-top-right-radius: 0.8rem;
+
+                button {
+                    border: 0;
+                    padding: 0.4rem;
+                    border-radius: 0.4rem;
+                    display: flex;
+                    gap: 0.8rem;
+                    align-items: center;
+                    color: var(--placeholder);
+                    background-color: var(--cool-grey);
+
+                    &.active {
+                        background-color: var(--white);
+                        color: var(--black);
+                    }
+                }
+            }
+
+            .btnFunction {
+
+                button {
+                    border-radius: 0.8rem;
+                    padding: 0.8rem 1rem;
+                    background-color: var(--violet);
+                    border: 1px solid var(--violet);
+                    color: var(--white);
+
+                    &:first-child {
+                        margin-right: 0.8rem;
+                        background-color: var(--white);
+                        border: 1px solid var(--color-btn-calendar);
+                        color: var(--color-btn-calendar);
+                    }
+                }
+            }
+        }
+
+        .mainContent {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            border: 1px solid var(--grey);
+            border-radius: 0.8rem;
+            padding: 3.2rem;
+
+            .round {
+                cursor: pointer;
+            }
+
+            .progress {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+
+                .content {
+                    position: relative;
+                    flex: 1;
+                    display: flex;
+
+                    h2 {
+                        font-weight: 600;
+                        margin-bottom: 1.8rem;
+                    }
+
+                    .handleStep {
+                        display: flex;
+                        gap: 0.8rem;
+                        justify-content: flex-end;
+
+                        button {
+                            color: var(--white);
+                            border: 0;
+                            border-radius: 0.8rem;
+                            background-color: var(--success);
+
+                            &:first-child {
+                                background-color: var(--light-red);
+                            }
+                        }
+                    }
+
+                    .comments {
+                        padding-right: 0.4rem;
+                        width: 100%;
+                        position: relative;
+                        max-height: 40vh;
+                        flex: 1;
+                        overflow: scroll;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .roundCv {
+                        position: relative;
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+
+                        .infoCv {
+                            border-bottom: 1px solid var(--black);
+                            padding-bottom: 4rem;
+                            margin-bottom: 4rem;
+
+                            .linkCv {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.8rem;
+                                cursor: pointer;
+                                font-size: 1.8rem;
+                                font-weight: 600;
+                                color: var(--deep-blue);
+
+                                path {
+                                    stroke: var(--deep-blue);
+                                }
+                            }
+                        }
+                    }
+
+                    .roundInterview {
+                        width: 100%;
+
+                        .handleInterview {
+                            border-bottom: 1px solid var(--black);
+                            padding-bottom: 4rem;
+                            margin-bottom: 4rem;
+                        }
+
+                        .function {
+                            width: 100%;
+                            align-items: center;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .handleSchedule {
+                                cursor: pointer;
+                                color: var(--deep-blue);
+                            }
+
+                            .actions {
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .sentMail {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                cursor: pointer;
+                                margin-left: 1.2rem;
+                                color: var(--deep-blue);
+                            }
+
+                            button {
+                                margin-top: 0 !important;
+                            }
+
+                            .iconSent {
+
+                                width: 2.4rem;
+
+                                path {
+                                    stroke: var(--deep-blue);
+                                }
+                            }
+                        }
+                    }
+
+                    .roundClautid {
+                        width: 100%;
+
+                        .table {
+                            position: relative;
+
+                            .iconExpand {
+                                cursor: pointer;
+                                width: 2rem;
+                                height: 2rem;
+                                position: absolute;
+                                z-index: 10;
+                                right: 0;
+                                top: -2rem;
+                            }
+                        }
+
+                        .handleClautid {
+                            border-bottom: 1px solid var(--black);
+                            padding-bottom: 4rem;
+                            margin-bottom: 4rem;
+                        }
+
+                        .classClautid {
+                            .classRegister {
+                                .class {
+                                    span {
+                                        display: flex;
+                                        gap: 0.5rem;
+                                    }
+
+                                    .iconCheck {
+                                        width: 1.5rem;
+                                        height: 1.5rem;
+
+                                        &.checked {
+                                            path {
+                                                stroke: var(--success);
+                                            }
+                                        }
+
+                                        &.unChecked {
+                                            path {
+                                                stroke: var(--base);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .function {
+                            margin-top: 1rem;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .handleSchedule {
+                                color: var(--deep-blue);
+                            }
+                        }
+                    }
+
+                    .roundTest {
+                        width: 100%;
+
+                        .function {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                        .handleTest {
+                            border-bottom: 1px solid var(--black);
+                            padding-bottom: 4rem;
+                            margin-bottom: 4rem;
+                        }
+
+                        .handleStep {
+                            display: flex;
+                            gap: 0.8rem;
+                            justify-content: flex-end;
+
+                            button {
+                                color: var(--white);
+                                border: 0;
+                                border-radius: 0.8rem;
+                                background-color: var(--success);
+
+                                &:first-child {
+                                    background-color: var(--light-red);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comment {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        width: fit-content;
+
+        span.user {
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+    }
+
+    .commentContent {
+        border-radius: 0.8rem;
+        margin-left: auto;
+        margin-right: 0.8rem;
+        width: 70%;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .action {
+        cursor: pointer;
+    }
+}
+
+.createCandidate {
+    padding: 1.2rem 2rem;
+    width: 100%;
+    height: 100%;
+
+    .flex {
+        height: 100%;
+        display: flex;
+        gap: 1.2rem;
+
+        .itemColumn {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .selectExp {
+                min-width: 6rem;
+            }
+
+            .mb_24 {
+                height: 5rem;
+                margin-bottom: 2.4rem;
+
+                img {
+                    height: 1rem;
+                    width: 1rem;
+                }
+
+                .courseRegister {
+                    min-width: 5rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.4rem;
+
+                    img {
+                        margin-left: auto;
+                    }
+                }
+            }
+
+            .btn {
+                margin-top: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+
+                button {
+                    border-color: var(--placeholder);
+                    color: var(--color-btn-calendar);
+
+                    &:first-child {
+                        color: var(--base);
+                        border-color: var(--base);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.nodataCenter {
+    height: fit-content;
+    margin: auto;
+    align-self: center;
+}
+
+.processWaiting {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalConfirm {
+    .handleConfirm {
+        display: flex;
+        gap: 0.8rem;
+    }
+}
+
+.containerComment {
+    padding-top: 16rem;
+    position: relative;
+
+    .cmtContent {
+        width: 100%;
+    }
+
+    .isCreate {
+        position: absolute;
+        top: -2.6rem;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        padding-bottom: 1.2rem;
+
+        .commentContent {
+            .inputComment {
+                max-height: 10rem !important;
+            }
+
+            .btnFnc {
+                margin-top: 0.4rem;
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.8rem;
+
+                .buttonFormComment {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .send {
+                        path {
+                            stroke: var(--data);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pickDate {
+    z-index: 1150;
+}
+
+.btnCreateScheduleInterview {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+}
+
+.inputLoading {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.doneAndClassify {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+    }
+
+    .selectCourse {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-left: 0.4rem;
+        }
+
+        b {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.viewInfo {
+    padding: 0;
+}

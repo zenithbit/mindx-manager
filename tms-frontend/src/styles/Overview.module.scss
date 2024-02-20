@@ -1,0 +1,272 @@
+.containerOverView {
+    padding: 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    .listIndexOverview {
+        gap: 1.2rem;
+        display: flex;
+    }
+
+}
+
+h2:has(.expandIcon) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .expandIcon {
+        width: 2rem;
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
+
+.indexOverviewBlock {
+    flex: 1;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    // border: 1px solid var(--grey);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.teacher {
+    justify-content: space-evenly;
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span:first-child {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+    }
+
+    .flex {
+        gap: 0.4rem;
+    }
+
+    .item {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.listTeacher {
+    flex-direction: column;
+}
+
+.general {
+    flex: 1;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.itemGeneral {
+    flex: 1;
+}
+
+.overViewRecruitment {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    padding: 1.2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.4rem;
+
+    &.recruitmentOnExpand {
+        display: flex;
+
+        .tableIndex {
+            display: flex;
+            gap: 1.2rem;
+
+            .tableTotal,
+            .table {
+                max-height: 100%;
+                flex: 1;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .chart {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .pi3D,
+        .courseColumn {
+            flex: 1;
+            border: 1px solid var(--grey);
+        }
+    }
+
+    .pickDate {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        img {
+            transform: rotate(180deg);
+            width: 1.8rem;
+        }
+    }
+}
+
+.chartTable {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.tableIndex {
+    padding-top: 1.2rem;
+    max-width: 100%;
+
+    .tableTotal {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid var(--status-process-processing);
+
+        .ageAvg {
+            border-top: 1px solid var(--status-process-processing);
+            border-right: 1px solid var(--status-process-processing);
+        }
+
+        .bdLeft {
+            border-left: 1px solid var(--status-process-processing);
+        }
+
+        .bdBottom {
+            border-bottom: 1px solid var(--status-process-processing);
+        }
+
+        th,
+        td {
+            padding: 1.2rem;
+        }
+
+        .title {
+            background-color: var(--status-process-processing);
+            font-weight: bold;
+            color: var(--white);
+        }
+
+        .avgProcess {
+            font-size: 2.4rem;
+        }
+
+        .totalCandiate {
+            font-size: 3.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .table {
+        margin-top: 1.2rem;
+
+        thead {
+            tr {
+                th {
+                    color: var(--white) !important;
+                    background-color: var(--light-red) !important;
+
+                    &::before {
+                        background-color: var(--light-red) !important;
+                    }
+                }
+            }
+        }
+
+        .title {
+            font-weight: 500;
+        }
+
+        .green {
+            color: var(--success);
+        }
+
+        .orange {
+            color: var(--orange);
+        }
+
+        .red {
+            color: var(--light-red);
+        }
+    }
+}
+
+.pi3D {
+    max-width: 100%;
+}
+
+.teacherAnalystic {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.4rem;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .teacherStatisticPiChart,
+        .columnsStatistic,
+        .tableOverViewTotalTeacher,
+        .teacherPointTable {
+            flex: 1;
+        }
+    }
+
+    &.teacherAnalysticOnExpand {
+        .item {
+            flex-direction: row;
+        }
+    }
+
+    .filter {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .chart {
+        overflow-y: scroll;
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+
+.teacherStatisticPiChart,
+.columnsStatistic {
+    border: 1px solid var(--grey);
+    padding: 1.2rem;
+}

@@ -1,0 +1,96 @@
+.bookTeacher {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    .fnc {
+        display: flex;
+
+        .btnCreateRequest {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            justify-content: center;
+            margin-left: auto;
+            border-color: var(--base);
+            color: var(--base);
+        }
+    }
+
+    .tdGroup {
+        span {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            .eye {
+                display: none;
+            }
+        }
+    }
+
+    tr {
+        td.tdSwitch {
+            span {
+                font-size: 0.3rem !important;
+            }
+        }
+
+        td.cellTeacherRegister:hover {
+            color: var(--base) !important;
+        }
+    }
+
+    tr:hover {
+        .eye {
+            display: block;
+        }
+    }
+
+
+}
+
+.fnc {
+    margin-top: 0.8rem;
+}
+
+.btnAddTeacher {
+    float: right;
+}
+
+.btnRemoveTeacher {
+    &:hover {
+        color: var(--base) !important;
+        border-color: var(--base) !important;
+    }
+}
+
+.popOver {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        margin: 0;
+        cursor: pointer;
+        padding: 0.8rem;
+        border-radius: 0.8rem;
+    }
+
+    div:hover {
+        background-color: var(--white-bg);
+    }
+}
+
+.registerClass {
+    .label {
+        margin-right: 1.2rem;
+    }
+
+    button {
+        float: right;
+        margin-top: 0.4rem;
+        display: block;
+    }
+}

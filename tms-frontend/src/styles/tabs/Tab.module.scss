@@ -1,0 +1,21 @@
+.tabPanel,
+.managerLocation,
+.mangerRecruitment {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+        width: 100%;
+    }
+}
+
+.tabFeedback,
+.mangerRecruitment {
+    padding: 0 !important;
+    background-color: transparent !important;
+
+    span {
+        width: 100%;
+    }
+}

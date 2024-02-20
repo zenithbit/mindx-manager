@@ -1,0 +1,128 @@
+.candidatePage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .actions {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .checkCandidate {
+        display: flex;
+    }
+
+    .step {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.visualizeStep {
+    margin-top: 2.4rem;
+}
+
+.classRunningPage {
+    width: 70%;
+    margin: auto;
+    padding-top: 1.2rem;
+
+    .statusClass,
+    .courseName {
+        text-align: center;
+        padding: 0.4rem;
+        border-radius: 0.8rem;
+    }
+
+    .courseName {
+        color: var(--white);
+    }
+
+    .timeRange {
+        padding: 0.4rem;
+        border-radius: 0.8rem;
+    }
+
+    .expired {
+        color: var(--white);
+        background-color: var(--light-red);
+    }
+
+    p:has(.sup) {
+        position: relative;
+
+        .sup {
+            right: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1rem;
+            height: 1rem;
+            font-size: 0.8rem;
+            border-radius: 50%;
+            color: var(--white);
+            background-color: var(--orange);
+        }
+    }
+
+    .filter {
+        margin-bottom: 1.2rem;
+
+        .btn,
+        .filterCourse {
+            margin-left: 1.2rem;
+        }
+    }
+}
+
+.btnRegister {
+    float: right;
+}
+
+.pickDateRegister {
+    z-index: 1105;
+}
+
+.feedbackClautid {
+    .cell {
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+
+        &.completed {
+            background-color: var(--success);
+            color: var(--white);
+        }
+
+        &.pending {
+            background-color: var(--status-process-processing);
+            color: var(--white);
+        }
+    }
+}
+
+.fillFeedbackClautid {
+    .btnGroup {
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.2rem;
+    }
+}
+
+.btnPopup {
+    display: none !important;
+}
+
+.option {
+    text-align: center;
+
+    .btnTime {
+        margin-right: 1.2rem !important;
+    }
+}
+
+.testClautid {
+    
+}

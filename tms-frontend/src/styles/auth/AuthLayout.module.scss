@@ -1,0 +1,47 @@
+.auth_layout {
+    min-height: 100%;
+    display: flex;
+    background-color: var(--white);
+
+    .bar_icon {
+        position: relative;
+        flex: 1;
+        position: relative;
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cool-grey);
+
+        .absolute {
+            position: absolute;
+        }
+
+        .top_0 {
+            top: 0;
+        }
+
+        .icon {
+            z-index: 1;
+        }
+
+        .bt_0 {
+            bottom: 0;
+        }
+
+        .zIndex {
+            z-index: 0;
+            width: 100%;
+        }
+    }
+
+    .content_auth {
+        flex: 1;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+}

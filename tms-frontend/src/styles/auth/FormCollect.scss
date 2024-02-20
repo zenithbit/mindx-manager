@@ -1,0 +1,19 @@
+.form_collection {
+    .mw_440 {
+        max-width: 44rem;
+    }
+
+    .mh-46 {
+        max-height: 46rem;
+    }
+
+    .ant-checkbox-group {
+        justify-content: space-between;
+        flex-wrap: wrap !important;
+
+        .ant-checkbox-group-item {
+            margin: 0;
+            min-width: 50%;
+        }
+    }
+}

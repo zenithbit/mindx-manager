@@ -1,0 +1,134 @@
+.listTE {
+    padding: 1.2rem;
+}
+
+.statusActive {
+    text-align: center;
+    color: var(--white);
+    border-radius: 0.4rem;
+}
+
+.containerPageTe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .contentMain {
+        flex: 1;
+    }
+}
+
+.treeGprahic {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+g {
+    &:has(.label) {
+        translate: 0 !important;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    image.imageNode {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+.tooltipPoint {
+    padding: 1.2rem;
+    border: 1px solid var(--bg-input);
+    box-shadow: var(--pink) 0px 1px 2px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: white;
+
+    .imgTe {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin: auto;
+    }
+}
+
+.teInfo {
+    display: flex;
+    height: 100%;
+
+    .leftInfo {
+        border-right: 1px solid var(--bg-input);
+        flex: 1;
+        padding: 1.2rem;
+
+        .shortInfo {
+            text-align: center;
+
+            .cropImage {
+                margin: auto;
+            }
+
+            p {
+                margin: 0;
+
+                &.teName {
+                    font-size: 1.8rem;
+                    color: var(--black);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .imageStaff {
+            border: 1px solid var(--bg-input);
+            border-radius: 50%;
+        }
+    }
+
+    .rightInfo {
+        flex: 2;
+    }
+}
+
+.overViewTe {
+    .baseInfo {
+        display: flex;
+
+        .item {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+            span {
+                p {
+                    font-size: 1.8rem;
+
+                    &:first-child {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &.itemMiddle {
+                border-left: 1px solid var(--cool-grey-1);
+                border-right: 1px solid var(--cool-grey-1);
+            }
+        }
+    }
+}
+
+.contentTab,
+.myInfo {
+    padding: 1.2rem;
+}
+
+.btnAction {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+}

@@ -1,0 +1,333 @@
+.detailClassContainer {
+    position: relative;
+    padding: 1.6rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .fncBtn {
+        position: absolute;
+        right: 1.6rem;
+        top: 3.2rem;
+        display: flex;
+        gap: 0.8rem;
+        background-color: var(--white);
+
+        .btn {
+            padding: 2.3rem 1.2rem;
+            color: var(--base);
+            border-color: var(--base);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+    }
+
+    .listTab {
+        font-weight: 500;
+        margin-bottom: 3.2rem;
+    }
+
+    .containerMain {
+        display: block;
+        flex: 1;
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .overViewDetailClass {
+            display: flex;
+            height: 100%;
+            gap: 0.8rem;
+            position: relative;
+        }
+
+        .colLeft {
+            flex: 2.5;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .row {
+                flex: 0.25;
+                display: flex;
+                gap: 0.8rem;
+                min-height: 10rem;
+
+                .title {
+                    padding-top: 1.6rem;
+                    flex: 1;
+                    font-size: 1.6rem;
+                    color: var(--blue);
+                    font-weight: 500;
+                }
+
+                .content {
+                    flex: 6;
+                    padding: 1.6rem;
+                    border-radius: 0.8rem;
+                    border: 1px solid var(--cool-grey);
+
+                    .parent {
+                        max-height: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 1rem;
+
+                    }
+
+                    .itemContent {
+                        overflow-y: scroll;
+                        padding-left: 1rem;
+
+                        // br {
+                        //     display: none;
+                        // }
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .text {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .colRight {
+            flex: 1;
+        }
+
+        .colNotifi {
+            padding: 0.8rem;
+            border-radius: 0.8rem;
+            border: 1px solid var(--cool-grey);
+            display: flex;
+            flex-direction: column;
+
+            .titleNotif {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.8rem 0;
+
+                span {
+                    font-size: 2.4rem;
+                    color: var(--blue);
+                }
+
+                .iconPlus {
+                    cursor: pointer;
+
+                    img {
+                        width: 1.4rem;
+                        height: 1.4rem;
+                    }
+                }
+            }
+
+            .contentNotifi {
+                overflow-y: scroll;
+                display: flex;
+                flex-direction: column;
+                max-height: 75%;
+            }
+
+            .combineLink {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                gap: 0.8rem;
+                flex: 1;
+                padding-bottom: 0.8rem;
+
+                .link {
+                    border: 1px solid var(--grey);
+                    border-radius: 0.8rem;
+                    height: 4.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-weight: 500;
+                    gap: 0.8rem;
+
+                    &:hover {
+                        color: var(--base);
+                    }
+                }
+            }
+
+            .blockNotifi {
+                padding: 1.6rem 0.8rem;
+                border-top: 1px solid var(--grey);
+
+                .titleBlock {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 0.8rem;
+
+                    .title {
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+
+                    .dateUpdate {
+                        font-size: 1.4rem;
+                        color: var(--grey);
+                    }
+                }
+            }
+        }
+    }
+
+    .iconEdit {
+        position: relative;
+
+        img {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    .handleStatus {
+        cursor: pointer;
+    }
+
+    .pickTimeSchedule {
+        button:hover {
+            color: var(--base);
+            border-color: var(--base);
+        }
+
+        &:first-child {
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+
+.activeStatus {
+    color: var(--base) !important;
+    background-color: #0000000a;
+}
+
+.btnFilterBySession {
+    border-color: var(--base);
+    color: var(--base) !important;
+
+    &:hover {
+        border-color: var(--base) !important;
+        color: var(--base) !important;
+    }
+}
+
+.pickSession {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.actionChecked {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+
+    .iconCheck {
+        &:hover {
+            color: var(--base);
+        }
+    }
+
+    .active {
+        color: var(--base);
+    }
+
+    .deactive {
+        color: var(--grey);
+    }
+}
+
+div.selectHours {
+    margin: auto;
+    width: 6rem;
+}
+
+.inputSelectHours {
+    &:hover {
+        >div:first-child {
+            opacity: 1 !important;
+        }
+    }
+
+    >div:first-child {
+        opacity: 0 !important;
+    }
+}
+
+.feedbackDetailClass {
+    .point {
+        display: block;
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+        color: var(--white);
+    }
+
+    .filter {
+        margin-bottom: 1.2rem;
+
+        .timeCollect {
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-end;
+        }
+    }
+
+    td.mentor {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--base);
+        }
+    }
+
+}
+
+.selectGroup {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 0.4rem;
+
+    * {
+        margin: 0 !important;
+    }
+}
+
+.changeStatus {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.topLevel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.showStatus {
+    &:hover {
+        outline: none !important;
+        border-color: #d9d9d9 !important;
+        color: unset !important;
+    }
+}

@@ -1,0 +1,82 @@
+.paginationAjax {
+    display: flex;
+    height: 2.7rem;
+    background-color: var(--white);
+    justify-content: space-between;
+    position: relative;
+
+    .chevron {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            height: 1.5rem;
+            display: flex;
+        }
+
+        .chevronUp,
+        .chevronDown {
+            cursor: pointer;
+        }
+
+        img {
+            width: 1rem;
+            height: 1.5rem;
+        }
+    }
+
+    .rowOnPage {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        .chevronRoot {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            gap: 0.5rem;
+            border-radius: 0.8rem;
+            height: 2.7rem;
+        }
+    }
+
+    .pagination {
+        left: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .btnHanldePage {
+            width: 2.4rem;
+            height: 2.4rem;
+            background-color: var(--white);
+            border-radius: 0.8rem;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .stepPage {
+        display: flex;
+        gap: 1.6rem;
+        height: 100%;
+        align-items: center;
+
+        .page {
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+            gap: 1rem;
+            border-radius: 0.8rem;
+        }
+
+    }
+}

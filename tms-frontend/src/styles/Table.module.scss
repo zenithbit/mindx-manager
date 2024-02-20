@@ -1,0 +1,44 @@
+.tableCustomizeAnt {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: var(--white);
+
+  thead {
+    tr {
+      th {
+        background-color: var(--row-head) !important;
+        padding: 0.8rem !important;
+        font-weight: 500 !important;
+        color: var(--text-head) !important;
+
+        .sortHeader {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+        }
+      }
+    }
+  }
+
+  tbody {
+    td {
+      padding: 1rem 0rem !important;
+      cursor: pointer;
+    }
+    td:first-child {
+      padding: 0.8rem !important;
+    }
+  }
+
+  .loadingInTable {
+    margin: 0 !important;
+    transform: translate(-1.5rem, 0.5rem);
+
+    img {
+      position: absolute;
+      transform: translate(-0.5rem, 0.5rem);
+    }
+  }
+}
