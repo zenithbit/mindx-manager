@@ -22,7 +22,7 @@ import PageHeader from "@/components/PageHeader";
 import { siderByRole } from "./tab";
 import Loading from "@/components/loading";
 import Empty from "@/components/Empty";
-import logo from "@/assets/imgs/mindx.png";
+import logo from "@/assets/imgs/ptit.png";
 import { Layout } from "antd";
 const { Sider, Content } = Layout;
 import styles from "@/styles/ContainerPage.module.scss";
