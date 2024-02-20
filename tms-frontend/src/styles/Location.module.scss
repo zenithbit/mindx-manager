@@ -1,0 +1,21 @@
+.area {
+    .btn {
+        padding: 1.2rem;
+        text-align: right;
+    }
+}
+
+.btnSubmit {
+    margin-top: 1.2rem;
+    float: right;
+}
+
+.deactive {
+    color: var(--drop);
+    font-weight: bold;
+}
+
+.active {
+    color: var(--success);
+    font-weight: bold;
+}

@@ -1,0 +1,202 @@
+.detailTeacher {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.overViewTeacher {
+    flex: 1;
+    padding: 0 2.4rem;
+
+    .fullName {
+        font-size: 2.4rem !important;
+        font-weight: 500;
+    }
+
+    .hr {
+        width: 75%;
+        margin: auto;
+    }
+
+    .headerOverview {
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem 0;
+        gap: 8rem;
+
+        .overView {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin: 0;
+            }
+
+            .flex {
+                display: flex;
+                gap: 4rem;
+            }
+
+            .info {
+                display: flex;
+                gap: 4rem;
+            }
+
+            .indexes {
+                display: flex;
+            }
+
+            b {
+                font-weight: 500;
+            }
+
+            .courseRegister {
+                .containerCourse {
+                    display: flex;
+
+                    li {
+                        margin-left: 3rem;
+                    }
+                }
+
+                .course {
+                    font-weight: 500;
+                }
+            }
+
+            .listCourseRegister {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.classRegister {
+    .codeClass {
+        &:hover {
+            color: var(--base);
+        }
+    }
+
+    .statusClass {
+        border-radius: 0.8rem;
+        width: fit-content;
+        padding: 0.8rem 1.6rem;
+        font-weight: 500;
+    }
+
+    .iconEnroll {
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+.overViewTeacherInfo {
+    .formInfo {
+        display: flex;
+        gap: 0.8rem;
+
+        .input {
+            margin-bottom: 1.2rem;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+        }
+
+        .roleRegister {
+            justify-content: flex-start;
+            flex-direction: column;
+            display: flex;
+            gap: 0.4rem;
+
+            * {
+                margin: 0;
+            }
+        }
+
+        .titleRole {
+            display: flex;
+
+            .icon {
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.2rem;
+                height: 1.2rem;
+                border-radius: 50%;
+                border: 1px solid var(--base);
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+.feedbackTeacher {
+    .toolBar {
+        display: flex;
+        margin-bottom: 1.2rem;
+
+        a {
+            margin-left: auto;
+        }
+
+        .btnExport {
+            border-color: var(--base);
+
+            &:hover {
+                color: var(--base);
+                border-color: var(--base);
+            }
+        }
+    }
+
+    td.classCell {
+        &:hover {
+            color: var(--base);
+        }
+    }
+
+    .table {
+        background-color: transparent !important;
+
+        td.point {
+            font-weight: bold;
+        }
+    }
+
+    .paginationAjax {
+        background-color: transparent !important;
+    }
+}
+
+.btnAction {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+
+    &.fromFormInfo {
+        justify-content: flex-end;
+    }
+}
+
+.salary {
+
+    >div.btnAction {
+        justify-content: flex-end;
+    }
+}
+
+.formSalary {
+    .btnAction {
+        margin-top: 1.2rem;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,9 @@
+.tooltip {
+    padding: 1.2rem 1.6rem;
+    width: 100%;
+    border-radius: 0.8rem;
+
+    &:hover {
+        background-color: var(--pink-red);
+    }
+}

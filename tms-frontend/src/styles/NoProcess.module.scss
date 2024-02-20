@@ -1,0 +1,16 @@
+.noProcess {
+    display: flex;
+    width: 13rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6rem;
+    gap: 0.8rem;
+    background-color: var(--bg-input1);
+    color: var(--grey-holder);
+
+    svg {
+        margin-left: 0.8rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

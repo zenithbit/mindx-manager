@@ -1,0 +1,217 @@
+.containerFormfeedback {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .child {
+        flex: 1;
+    }
+}
+
+.managerQuestion {
+    background-color: var(--light-purple);
+
+    .headerQuestion {
+        position: relative;
+        padding-top: 0.4rem;
+
+        .lineHead {
+            width: 100%;
+            top: 0;
+            position: absolute;
+            background-color: var(--purple);
+            height: 1rem;
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
+        }
+
+        .title {
+            padding: 3rem;
+        }
+    }
+}
+
+.listClass {
+    td.status {
+        button span {
+            font-size: 0.3rem !important;
+        }
+    }
+}
+
+.formCollectStudent {
+    height: 100%;
+    padding: 2rem;
+    gap: 2rem;
+
+    .logo {
+        padding: 4rem;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        background-color: var(--white);
+
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+    }
+
+    .header {
+        position: relative;
+        border-radius: 0.8rem;
+
+        .line {
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
+            position: absolute;
+            width: 100%;
+            background-color: var(--light-white);
+            height: 1rem;
+        }
+
+        .line2 {
+            font-weight: bold;
+            height: fit-content;
+            padding: 1.6rem;
+
+            h2 {
+                margin: 0;
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+        }
+
+        .contentTitle {
+
+            h1 {
+                font-size: 3.2rem;
+                font-weight: normal;
+                text-align: center;
+            }
+        }
+
+        .contentTitle2 {
+            margin-top: 5rem;
+
+            ol {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            b {
+                width: 20%;
+            }
+        }
+    }
+
+    .input {
+        width: 50%;
+        margin-top: 1rem;
+        border: 0;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+        border-bottom: 1px solid var(--grey);
+    }
+
+    .fieldInput {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mb_24 {
+        margin-bottom: 2.4rem;
+    }
+
+    .group {
+        background-color: var(--white);
+    }
+
+    .listRadio {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .dropdownSelect {
+        img {
+            margin-left: 2rem;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
+
+.point {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .parentPoint {
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .itemPoint {
+        display: flex;
+        height: 100%;
+        gap: 2rem;
+
+        &::after {
+            content: '';
+        }
+    }
+}
+
+.reset {
+    float: right;
+}
+
+.actionChecked {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+
+    .iconCheck {
+        &:hover {
+            color: var(--base);
+        }
+    }
+
+    .active {
+        color: var(--base);
+    }
+
+    .deactive {
+        color: var(--grey);
+    }
+}
+
+.selectTime {
+    width: fit-content;
+
+    .checkboxGroup {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+
+        * {
+            margin: 0;
+        }
+    }
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.submit {
+    margin-left: 1rem;
+}

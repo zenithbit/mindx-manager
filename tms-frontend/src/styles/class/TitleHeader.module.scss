@@ -1,0 +1,56 @@
+.titleHeader {
+    display: flex;
+    align-items: center;
+
+    .codeClass {
+        font-size: 2.2rem;
+    }
+
+    .statusClass {
+        color: var(--black);
+        font-weight: normal;
+        padding: 0.8rem 1.6rem;
+        margin-left: 1.2rem;
+        border-radius: 0.8rem;
+    }
+
+    .dateStart {
+        font-size: 1.6rem;
+    }
+
+    .breadCrumb {
+        margin-left: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        a:hover {
+            color: var(--base);
+        }
+    }
+
+    .btnFnc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon {
+        margin-left: 0.4rem;
+        cursor: pointer;
+
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    .close {
+        margin-left: 0.5rem;
+        cursor: pointer;
+
+        img {
+            transform: rotate(45deg);
+        }
+    }
+}

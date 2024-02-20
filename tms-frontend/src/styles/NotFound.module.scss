@@ -1,0 +1,23 @@
+.page_not_found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    .text {
+        text-align: center;
+        border-right: 1px solid var(--black);
+        padding-right: 1rem;
+    }
+
+    .logo {
+        width: 10rem;
+        height: 10rem;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

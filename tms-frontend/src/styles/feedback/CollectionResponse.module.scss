@@ -1,0 +1,43 @@
+.collectionAnswer {
+    .toolBar {
+        display: flex;
+        margin-bottom: 1.2rem;
+        padding: 0 1.6rem;
+        justify-content: flex-end;
+        gap: 0.8rem;
+
+        .btn {
+            padding: 0 0.8rem;
+            border-radius: 0.8rem;
+            height: 2.6rem;
+            border-color: var(--base);
+
+            span {
+                color: var(--base) !important;
+
+                img {
+                    margin-right: 0.4rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+
+    label {
+        margin: 0 !important;
+    }
+}
+
+th.flexReverse {
+    div {
+        display: flex;
+    }
+}
